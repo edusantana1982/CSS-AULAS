@@ -1,0 +1,29 @@
+.box {
+    width: 50px;
+    height: 50px;
+    background: #ff1493;
+    /*padding: 60px;Expande de dentro para fora, paddin é interno, desta forma aplicasse as configurações de padding para os 4 lados da div */
+    /*margin: 20px;cria uma margen ao redor da div, a margen é externo, desta forma aplicasse as configurações de margen para os 4 lados da div */
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    margin-left: 5px; /*Essas configurações podemos usar tanto no margin como no padding.*/
+
+    padding: 10px 50px 30px 5px;/*desta forma configuramos em apenas uma linha os 4 lados da div, de forma que o primeiro valor é top, o segundo é right o terceiro e bottom e o quarto é left, podemos aplicar tanto para o margin como o padding, quando colocamos apenas dois valores ele entende que um valor é top e botton e o outro right e left, quando colocamos 3 valores o primeiro é top, o segundo é right e left o terceiro é bottom.*/
+
+
+
+
+
+
+
+}
+/*
+.box-2 {
+    width: 50px;
+    height: 50px;
+    background: 9932cc;
+    margin: 50px;
+    padding: 60px;
+}
+*/

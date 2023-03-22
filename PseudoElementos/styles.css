@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Aqui podemos fazer uma configuração simples de forma direta ao elemento, mas como trocar do placeholder*/
+input {
+    border: 1px solid red;
+    color: blue;
+}
+/*Suposmos que queremos trocar as configurações do placeholder, ai é onde entra os psudoelementos, entao selecionamos os elemento e colocamos dois pontos duas vezes ex: input::placeholder {} assim podemos trocar as configurações especificas dele*/
+
+input::placeholder {
+    color: palevioletred;
+
+}
+p {
+    color: blue;
+}
+p::first-letter {
+    color: red;/*Alteramos a configuração da primeira letra do paragrafo.*/
+}
+p::first-line { /*Alteramos a configuração da primeira linha do paragrafo*/
+    color: brown;
+}
+a::after {  /*Aqui podemos coloccar itens antes ou depois do link, usando as mesma tecnica do pseudoelementos. assim coolocamos o emoticon antes e depois dos link.*/
+    content: "🚀";
+}
+a::before {
+    content: "😎"; /*Aqui podemos coloccar itens antes ou depois do link, usando as mesma tecnica do pseudoelementos. assim coolocamos o emoticon antes e depois dos link.*/
+}
+
+

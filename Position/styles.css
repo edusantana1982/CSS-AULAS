@@ -1,0 +1,66 @@
+/* Quando criamos os elementos o html sempre joga o maximo acima e a esquerda que são os casos da div, esse é o padrão dos elemento com o position podemos mudar a posição destes elemento.
+
+position: static (padrão) não aceita valores de top, bottom, right e left
+
+position: fixed fixa o elemento na tela, como se o elemento flutuasse e outros elementos ficam atrás dele, podemos mover ele em qualquer direção, mesmo rolando a pagina ela fica fixa em relação aos demais elementos as filhas seguem o pai, não podemos inserir o top e o bottom juntos da conflito
+
+position: sticky age como um adesivo, fixa o elemento só onde eu determinar, para que ele funcione temos que dar o valor de top bottom left ou right ele vai junto com a rolagem da pagina no local que determinamos, quando chegar no limite de pixels que colocamos ele vai parar de rolar.
+
+position: relative posição relativa a posição inicial dele, elemento vai se posicionar referente a posição inicial dele
+
+position: absolute posição absoluta (fixa) a algum elemento ou pagina, o  posicion absolute flutua na pagina, o relative ele não flutua mas cobre eo elementos da cascata
+            SE não tiver pai ou pai for static -> Posiciona referente a pagina, como ele não tem pai ele fica referente ao topo da pagina tela, assim o filho pode ignorar o pai.
+            SE o pai não for static -> Posiciona referente ao pai, aqui ele não ignora o pai
+propriedades
+    top
+    bottom
+    left
+    right
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 200vh;
+    width: 200vw;
+}
+
+.div-dad {
+    height: 350px;
+    width: 350px;
+    background-color: #ff1396;
+    position: absolute; /*Como o pai não é static a posição do filho será relativa ao pai, se fosse estatic a posiçãde dele seria relativa a pagina*/
+    margin-top: 200px;
+    
+    /*position: sticky;*/
+    /*top: 20px;*/ /*delimita ate que distancia da borda superior vamos chegar*/
+    /*left: 20px;*/ /*delimita ate que distancia da borda esquerda vamos chegar*/
+    /*position: fixed;
+    left: 100px;
+    top: 0px;*//* no position usamos apenas top, right, botton, left, posição fica fixa mesmo com a rolagem da tela e o filho vai junto, evitar os conflitos.*/
+}
+
+.div-son {
+    height: 150px;
+    width: 150px;
+    background: #ffff00;
+    /*position: relative;
+    top: 50px;*/
+    position: absolute;
+    margin-top: 20px;
+    left: 100px;
+    
+}
+
+.tanana {
+    height: 100px;
+    width: 100px;
+    background: black;
+    color: aqua;
+    /*position: relative;*/
+    /*top: 20px;*//*vai se posicionar referente 20px ao topo*/
+
+    
+    
+}

@@ -1,0 +1,49 @@
+/*
+Responsividade é capacidade do site se adaptar tanto a telas grandes como a telas menores, existem varias ferramentas para deixar nosso site responsivo uma delas é o midia care que é falar para o css que estilo aplicar de acordo com o tamanho da tela, @media colocamos uma condição dentro dos parenteses o que queremos aplicar, lembrando que devemos colocar logo abaixo do parametro inicial.
+*/
+
+/*Responsividade
+
+All: Para todos os dispositivos.
+Braille: Para dispositivos tateis.
+Embossed: Para dispositivos que imprimem em braille.
+Handheld: Para dispositivos portateis, geralmente com telas pequenas e banda limitada.
+Print: Para impressão em papel, para que toda vez que formos imprimir apareça uma marca dagua.
+Projection: Para apresentações como PPS.
+Screen: Para monitores ou dispositivos com telas coloridas e resolução adequada.
+Speech: Para sintetizadores de voz. As CSS 2 tem uma especificação de CSS aural, onde podemos formatar a voz dos sistetizadores.
+
+Orientação
+Portrait - altura maior que largura
+landscape - largura maior que a altura
+
+*/
+
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    height: 700px;
+    width: 700px;
+    background: blue;
+}
+
+/*
+Temos algubs operadores logicos
+*/
+
+@media screen and (max-width: 600px) and (orientation: landscape) {/*Colocando essa configuração ele vai colocar toda a configuração abaixo destes parametros conforme listado abaixo, passou de 600 ele não aplica, para quelquer tipo de tela, acima estamos vendo mais uma forma onde podemos usar operadores para no caso acima o and para que so mude a configuração caso todos os parametros sejam verdadeiros*/
+    div {
+        top: 397px;
+        background: #5d5d7d;
+        width: 375px;
+        height: 415px;
+        opacity: 0.16;
+    }
+}

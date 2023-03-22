@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;/* Quando selecionamos esta propriedade border-box não deixa a caixa crescer, caso coloquemos o content box vai crescer conforme aumenta os itens.*/
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: #ff1493;
+    padding: 20px;
+    border: 10px solid #0000ff;/*Para configurar a largura da borda temos 3 propriedades a primeira é a largura a segunda é o tipo a ultima é a cor.*/
+}

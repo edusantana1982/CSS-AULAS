@@ -1,0 +1,46 @@
+html {
+    font-size: 32px;
+}
+
+.vo{
+    font-size: 16px;
+}
+
+.pai {
+    width: 500px;
+    height: 500px;
+    background: #0000ff;
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.filho {
+    width: 50%;
+    height: 50%;
+    background: #ff0000;
+    color: #ffffff;
+    font-size: 2em;
+}
+
+
+
+
+/*.titulo, .botao, p, #outro-botao {
+
+/*
+UNIDADES DE MEDIDAS
+
+-> ABSOLUTAS
+px (pixels) mais usado
+in (inches/polegadas) mas podemos usar tbm
+cm/mm (centimetro/ milimetro) mas podemos usar tbm
+
+-> RELATIVAS - são relativas a alguém
+% calcula o tamanho relativo ao elemento pai
+vw (view width) 1vw é 1% da largura da janela do navegador
+vh (view height) 1vh é 1% da altura da janela do navegador
+em é uma unidade de medida relativa ao elemento pai
+rem é uma unidade de medida relativa ao elemento raiz
+se houver comentario sempre inserir ao final
+
+*/

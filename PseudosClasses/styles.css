@@ -1,0 +1,68 @@
+/*PSEUDO CLASSES
+Imagine quando passamos o mouse por cima de um botao e ele muda de formato.
+
+:active - quando o elemento está ativo, ou seja, esta sendo pressionado
+:visited - seleciona o link que foi visitado
+:hover - quando  o mouse passa encima do elemento
+:checked - usado em radio /check box /select
+:disabled - elemento desabilitado/button/input
+:enabled - elemento esta habilitado
+:focus - é aplicada quando um elemento recebe o foco, o que pode ocorrer quando o usuário seleciona o elemento.
+:empty - elemento que não tem filho
+
+:first-child - primeiro filho / ex: primeira li de uma ul/ primeiro span de uma div
+:first-of-type - primeiro elemento de seu tipo entre os filhos de seu elemento pai.
+:last-child - ultimo filho
+:last-of-type - ultimo elemento de seu tipo entre os filhos de seu elemento pai
+:not() - estiliza elementos, exceto o que esta dentro do ()
+:nth-child() - seleciona o elemento baseado na sua posição ex: :nth-child(3)
+:nth-last-child() - seleciona o elemento baseado na sua posição, contando de tras para frente
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*a:active *//*{*/
+    /*color:;*/ /*funciona com o clique do mouse, podemos inspecionar com o hov no navegado ele mostra o botao ou link ativo*/
+/*}*/
+
+a:visited {
+    color: blue;
+    /*para quando o link foi visitado alguma vez, mudando de cor quando foi clicado pe permanecendo com a cor.*/
+}
+p:hover {
+    color: blue;/*Muda a cor do texto ou botão com o mouse apontado.*/
+}
+input:checked {
+    width: 100px;
+    height: 100px; /*muda a forma do checked quando ele for selecionado.*/
+}
+
+/*mas na frente iremos ver como controlar o enable ou disabled pelo javascript e react*/
+
+input:focus {
+    border: 1px solid red;
+    outline: none; /*Focus é quando elemento esta focado*/
+}
+.container {
+    height: 100px;
+    width: 100px;
+    background: red;
+}
+.container:empty {
+    background: blue;
+}
+li:first-child {
+    color: red;
+}
+
+
+
+
+
+
+
+

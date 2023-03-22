@@ -1,0 +1,22 @@
+h1 {
+    color: red;
+    font-size: 64px;
+    font-weight: light;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+     text-shadow: 10px 10px 40px #ff0000; /*aqui colocamos as propriedades de sombreamento em vertical, horizontal esfumaçado e a cor do sombramento.*/
+}
+p {
+    color: blue;/* Troca a cor do texto*/
+    font-size: 30px;/*Toca o tamanho do texto*/
+    font-weight: 100;/*peso da fonte*/
+    font-family: 'Roboto', sans-serif;/*seleção de tipo da fonte*/
+    line-height: 120px; /*espaço entre as linhas*/
+    letter-spacing: 10px; /*espaço entre as letras*/
+    word-spacing: 10px; /*espaço entre as palavras*/
+    text-align: justify;/* alinhamento do tesxo com as opções center, justify*/
+    text-transform: capitalize;/*lowercase todos minusculos, uppercase todos maiusculos*/
+    text-decoration: underline;/*overline linha acima dentre outras.*/
+   
+
+}
